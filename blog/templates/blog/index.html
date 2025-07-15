@@ -5,17 +5,10 @@
  {% block css_files %}
  <link rel ="stylesheet" href = "{% static "blog/index.css" %}"/>{% endblock css_files %}
 {% block content %}
-<header id="main-navigation">
-  <h1>
-    <a href="#">Sergio Pinto's Blogs</a>
-  </h1>
-  <nav>
-    <a href="#">All Posts</a>
-  </nav>
-</header>
+
 <section id="welcome">
   <header>
-    <img src="{% static "blog/images/author_pintu" %}" alt="Sergio -The Author of this Blog" />
+    <img src="{% static "blog/images/author_pintu.jpg" %}" alt="Sergio -The Author of this Blog" />
     <h2>Pinto's Blogs</h2>
   </header>
   <p>Hii, I am pinto and i love to blog about world and tech</p>
@@ -23,20 +16,10 @@
 <section id="letest-posts">
   <h2>My Latest Thoughts</h2>
   <ul>
-    <li>
-      <article>
-        <a href="">
-          <img class = "post-img" src="blog/images/mountain.jpg" alt="mountain-hiking" />
-          <div class="post-content">
-            <h3>Mountain Hiking</h3>
-            <p>
-              There's no wifi in the mountains, but you'll find no better
-              connection.
-            </p>
-          </div>
-        </a>
-      </article>
-    </li>
+    {% for post in posts%}
+    {% include "blog/includes/post.html" %}
+    {% endfor %}
+    
   </ul>
 </section>
 <section id="about">

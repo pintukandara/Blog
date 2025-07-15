@@ -1,0 +1,140 @@
+body {
+ body {
+  background-color: #f5c89b;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+}
+
+/* Navigation Bar */
+#main-navigation {
+  background: linear-gradient(90deg, #3f51b5, #2196f3);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#main-navigation h1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+
+#main-navigation nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#main-navigation nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Welcome Section */
+#welcome {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: white;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#welcome img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#welcome h2 {
+  font-size: 2rem;
+  color: #3f51b5;
+}
+/* Section Container */
+#all-posts {
+  padding: 3rem 2rem;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Section Heading */
+#all-posts h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #2c3e50;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+/* Post List */
+#all-posts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Each Post Card */
+#all-posts li {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#all-posts li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+/* Small Post Image */
+#all-posts li img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+/* Post Content */
+#all-posts li .post-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#all-posts li .post-info h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+  color: #34495e;
+}
+
+#all-posts li .post-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

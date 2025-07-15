@@ -1,0 +1,82 @@
+/* Root styling */
+body {
+  background-color: #f5f7fa;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Summary section */
+#summary {
+  background-color: #fff;
+  padding: 2.5rem 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+#summary h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+#summary article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+#summary .post-img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+#summary address {
+  font-style: normal;
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+#summary time {
+  font-size: 0.9rem;
+  color: #95a5a6;
+}
+
+/* Main post content */
+main {
+  background-color: #ffffff;
+  padding: 2rem 2rem;
+  margin: 2rem auto 4rem;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+main p {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
