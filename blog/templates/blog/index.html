@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+ {% block title %}My Blog{% endblock title %}
+ {% block css_files %}
+ <link rel ="stylesheet" href = "{% static "blog/index.css" %}"/>{% endblock css_files %}
+{% block content %}
+<header id="main-navigation">
+  <h1>
+    <a href="#">Sergio Pinto's Blogs</a>
+  </h1>
+  <nav>
+    <a href="#">All Posts</a>
+  </nav>
+</header>
+<section id="welcome">
+  <header>
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHDjmGB4wj6QQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722402627841?e=1758153600&v=beta&t=Udv3VmpIZiMrq6lCkTF3Af0ZHY9TOJPMWNEJ6q3xN20" alt="Sergio -The Author of this Blog" />
+    <h2>Pinto's Blogs</h2>
+  </header>
+  <p>Hii, I am pinto and i love to blog about world and tech</p>
+</section>
+<section id="letest-posts">
+  <h2>My Latest Thoughts</h2>
+  <ul>
+    <li>
+      <article>
+        <a href="">
+          <img src="https://www.greenmountainclub.org/wp-content/uploads/2021/08/Mount-Mansfield_Sunset_Laura-Greenwood-1100px.jpg" alt="mountain-hiking" />
+          <div class="post-content">
+            <h3>Mountain Hiking</h3>
+            <p>
+              There's no wifi in the mountains, but you'll find no better
+              connection.
+            </p>
+          </div>
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+<section id="about">
+  <h3>What I Do</h3>
+  <p>
+    I'm a passionate full-stack developer with experience in Python, HTML, CSS,
+    JavaScript, and SQL. I enjoy building web applications from the ground up,
+    turning ideas into functional and visually appealing solutions. Whether it’s
+    backend logic or frontend design, I like solving real-world problems through
+    clean code and thoughtful design. I'm currently learning React.js and soon
+    diving into Django to build powerful full-stack projects. I also like
+    sharing my journey, challenges, and projects through this blog to help and
+    connect with fellow developers.
+  </p>
+</section>
+{% endblock content %}
