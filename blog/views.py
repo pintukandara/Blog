@@ -5,9 +5,9 @@ from  .models import Author,Posts
 # Create your views here.
 
 def starting_page(request):
-    all_posts = Posts.objects.all()
+    
     # sorted_posts = sorted(all_posts,key = get_date)
-    latest_posts = Posts.objects.all().order_by('date')[:3]
+    latest_posts = Posts.objects.all().order_by('-date')[:3]
     return render(request , "blog/index.html",{
         "posts" : latest_posts
     })
