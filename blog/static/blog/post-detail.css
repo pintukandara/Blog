@@ -69,6 +69,23 @@ main p {
   text-align: justify;
 }
 
+.tag {
+  display: inline-block;
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #b2ebf2;
+  cursor: pointer;
+}
+
 /* Animation */
 @keyframes fadeIn {
   from {

@@ -13,7 +13,7 @@ def starting_page(request):
     })
     
 def posts(request):
-    all_posts = Posts.objects.all()
+    all_posts = Posts.objects.all().order_by("-date")
     return render(request , "blog/all-posts.html",{
         "all_posts": all_posts
     })
@@ -23,5 +23,6 @@ def post_detail(request,slug ):
     identified_post = get_object_or_404(Posts,slug = slug)
 
     return render(request ,"blog/includes/post-detail.html",{
-        "post":identified_post
+        "post":identified_post,
+        "posts_tags":identified_post.tags.all()
     })
